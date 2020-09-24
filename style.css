@@ -1,0 +1,53 @@
+:root {
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --gradient: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --ligth-blue: #2570a8;
+    --ligt: hsl(230, 22%, 74%);
+    --very-dark-blue: #1d2029;
+    --dark-blue: #252b43;
+    --font: 'Inter', sans-serif;
+    --degrade: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --desaturated-blue: hsl(228, 34%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font);
+    font-size: 12px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+    color: white;
+}
+
+.header-container {
+    width: 100%;
+    padding-top: 3rem;
+}
+.header-container h1{
+    font-size: 2.5rem;
+}
+.header-container h4{
+    font-size: 1.2rem;
+    color: var(--desaturated-blue);
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--desaturated-blue);
+}
+
+.mode-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
