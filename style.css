@@ -76,11 +76,63 @@ section {
     align-items: center;
     text-align: center;
     border-top: 2px solid var(--lime-green);
+    border-radius: 5px;
 }
 .incons-container{
     display: flex;
     margin: 3rem;
 }
 .incons-container h3 {
-    
+    margin-left: 10px;
+    color: var(--desaturated-blue);
+}
+.number {
+    font-size: 5rem;
+    margin-top: -20px;
+}
+.followers {
+    color: var(--desaturated-blue);
+    text-align: justify;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+.today {
+    color: var(--lime-green);
+    margin-bottom: 20px;
+}
+
+.overview {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+.contx {
+    width: 100%;
+    background-color: var(--dark-blue);
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+.incon-wraper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.incon-wraper h3 {
+    color: var(--desaturated-blue);
+}
+.incon-wraper h2 {
+    font-size: 3rem;
+}
+.incon-wraper h5 {
+    font-size: 1.2rem;
+    color: var(--lime-green);
 }

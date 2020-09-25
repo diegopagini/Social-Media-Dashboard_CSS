@@ -28,7 +28,7 @@ const FOLLOWERS = [
         alt: "icon-youtube",
         name: "Nathan F.",
         total: 8239,
-        followers: "Subscribers",
+        followers: "SUBSCRIBERS",
         today: "144 Today"  
     }
 ]
@@ -107,13 +107,15 @@ mostrarSeguidores();
 function mostrarMas() {
     html = '';
     OVERVIEW.forEach(el => {
-        html += `<div class="incon-wraper">
-                <h3>${el.info}</h3>
-                <img src="${el.icon}"
-                </div>
-                <div class="incon-wraper">
-                <h2>${el.followers}</h2>
-                <h5>${el.today}</h5>
+        html += `<div class="contx">
+                    <div class="incon-wraper">
+                        <h3>${el.info}</h3>
+                        <img src="${el.icon}">
+                    </div>
+                    <div class="incon-wraper">
+                        <h2>${el.followers}</h2>
+                        <h5>${el.today}</h5>
+                    </div>
                 </div>
                 `
     })
