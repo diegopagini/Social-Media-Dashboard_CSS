@@ -1,0 +1,51 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header-container {
+  grid-column: 1;
+}
+.header-container h4 {
+  border: none;
+}
+.mode-container {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mode-container h3 {
+  margin-right: 10px;
+}
+.mode-container button {
+  width: 10%;
+}
+
+.main-container {
+  display: flex;
+}
+.cont {
+  margin: 0 10px;
+}
+
+.contx {
+  width: 23%;
+  margin: 10px;
+  display: flex;
+}
+.incon-wraper {
+  display: flex;
+}
+
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
