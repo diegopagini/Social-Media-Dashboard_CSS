@@ -87,13 +87,17 @@ const OVERVIEW = [
 function mostrarSeguidores() {
     html = '';
     FOLLOWERS.forEach(el => {
-        html += `<div class="incon@-container">
-        <img src="${el.url}" alt="${el.alt}">
-        <h3>"${el.name}"</h3>
-    </div>
+        html += `
+        <div class="cont">
+            <div class="incons-container">
+                <img src="${el.url}" alt="${el.alt}">
+                <h3>"${el.name}"</h3>
+            </div>
         <h1 class="number">${el.total}</h1>
         <h4 class="followers">${el.followers}</h4>
-        <h3 class="today">${el.today}</h3>`
+        <h3 class="today">${el.today}</h3>
+        </div>
+        `
     })
 
     document.getElementById('show-info').innerHTML = html;

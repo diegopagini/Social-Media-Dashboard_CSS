@@ -31,6 +31,10 @@ body {
     color: white;
 }
 
+section {
+    width: 90%;
+}
+
 .header-container {
     width: 100%;
     padding-top: 3rem;
@@ -50,4 +54,33 @@ body {
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.mode-container h3 {
+    color: var(--desaturated-blue);
+}
+.mode-container button {
+    width: 20%;
+    height: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--lime-green);
+}
+
+.cont {
+    width: 100%;
+    background-color: var(--dark-blue);
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid var(--lime-green);
+}
+.incons-container{
+    display: flex;
+    margin: 3rem;
+}
+.incons-container h3 {
+    
 }
