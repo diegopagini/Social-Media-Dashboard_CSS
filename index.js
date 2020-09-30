@@ -1,6 +1,6 @@
 const FOLLOWERS = [
     {
-        url: "/images/icon-facebook.svg",
+        url: "images/icon-facebook.svg",
         alt: "icon-facebook",
         name: "@nathanf",
         total: 1987,
@@ -8,7 +8,7 @@ const FOLLOWERS = [
         today: "12 Today"
     },
     {
-        url: "/images/icon-twitter.svg",
+        url: "images/icon-twitter.svg",
         alt: "icon-twitter",
         name: "@nathanf",
         total: 1044,
@@ -16,20 +16,22 @@ const FOLLOWERS = [
         today: "99 Today"  
     },
     {
-        url: "/images/icon-instagram.svg",
+        url: "images/icon-instagram.svg",
         alt: "icon-instagram",
         name: "@realnathanf",
         total: "11k",
         followers: "FOLLOWERS",
-        today: "1099 Today"  
+        today: "1099 Today",
+        class: "instagram"
     },
     {
-        url: "/images/icon-youtube.svg",
+        url: "images/icon-youtube.svg",
         alt: "icon-youtube",
         name: "Nathan F.",
         total: 8239,
         followers: "SUBSCRIBERS",
-        today: "144 Today"  
+        today: "144 Today",
+        class: "youtube"  
     }
 ]
 
@@ -88,7 +90,7 @@ function mostrarSeguidores() {
     html = '';
     FOLLOWERS.forEach(el => {
         html += `
-        <div class="cont">
+        <div class="cont ${el.class}">
             <div class="incons-container">
                 <img src="${el.url}" alt="${el.alt}">
                 <h3>"${el.name}"</h3>
