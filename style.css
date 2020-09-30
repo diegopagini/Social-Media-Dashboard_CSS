@@ -31,6 +31,14 @@ body {
     color: white;
 }
 
+.light {
+    background-color: white;
+    color: black;
+}
+.ligthx {
+    background-color: var(--ligt);
+}
+
 section {
     width: 90%;
 }
@@ -160,4 +168,18 @@ section {
 .incon-wraper h5 {
     font-size: 1.2rem;
     color: var(--lime-green);
+}
+
+#botoncito:active {
+    animation-name: mover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes mover {
+    0% {
+        transform: translate(5%);
+    }
+    100% {
+        transform: translate(200%);
+    }
 }

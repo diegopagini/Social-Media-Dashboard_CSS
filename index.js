@@ -86,6 +86,8 @@ const OVERVIEW = [
     }
 ]
 
+
+
 function mostrarSeguidores() {
     html = '';
     FOLLOWERS.forEach(el => {
@@ -106,6 +108,8 @@ function mostrarSeguidores() {
 }
 mostrarSeguidores();
 
+
+
 function mostrarMas() {
     html = '';
     OVERVIEW.forEach(el => {
@@ -125,3 +129,13 @@ function mostrarMas() {
     document.getElementById('show-more').innerHTML = html;
 }
 mostrarMas();
+
+
+
+function cambiarTodo(){
+    document.getElementById('botoncito').addEventListener('click', function(){
+        document.getElementById('body').classList.add('light')
+        document.getElementsByClassName('incons-container incon-wraper').classList.add('ligthx')
+    })
+}
+cambiarTodo()
