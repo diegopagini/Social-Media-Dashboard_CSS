@@ -132,10 +132,31 @@ mostrarMas();
 
 
 
+function cambiarMas(){
+    document.getElementById('botoncito').addEventListener('click', function(){
+    let contenedor = document.getElementsByClassName('contx') ;
+    for( let i = 0; i <= contenedor.length; i++ ) {
+        contenedor[i].style.background = "hsl(230, 22%, 74%)";
+    }
+})
+}
+cambiarMas();
+
+
+function cambiarMasMas(){
+    document.getElementById('botoncito').addEventListener('click', function(){
+    let firstCont = document.getElementsByClassName('cont');
+    for( let i = 0; i <= firstCont.length; i++ ) {
+        firstCont[i].style.background = "hsl(230, 22%, 74%)";
+    }
+})
+}
+cambiarMasMas();
+
+
 function cambiarTodo(){
     document.getElementById('botoncito').addEventListener('click', function(){
-        document.getElementById('body').classList.add('light')
-        document.getElementsByClassName('incons-container incon-wraper').classList.add('ligthx')
+        document.getElementById('body').classList.add('light');
     })
 }
 cambiarTodo()
